@@ -1,0 +1,116 @@
+/* Mobile phones (portrait and landscape) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .currency-pairs-scroll {
+    gap: 8px;
+    padding: 8px 0;
+  }
+  
+  .currency-pair-item {
+    padding: 6px 8px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+
+  .currency-select {
+    font-size: 13px;
+    padding: 10px 12px;
+    min-width: 70px;
+  }
+
+  .amount-input,
+  .result-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .swap-btn {
+    padding: 0 6px;
+  }
+
+  .currency-row {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .swap-btn {
+    align-self: center;
+  }
+
+  nav.bottom-nav-bar {
+    font-size: 14px;
+  }
+  #totalBalanceAmount {
+    font-size: 2rem;
+  }
+
+  #incomeAmount,
+  #expenseAmount {
+    font-size: 15px;
+  }
+  .balance-card, .exchange-card, .transactions-section {
+    padding: 10px;
+  }
+
+  .summary-item {
+    gap: 5px;
+  }
+
+  .summary-item .icon-wrapper {
+    width: 50px;
+    height: 40px;
+  }
+
+
+}
+
+/* Small tablets and landscape phones */
+@media (min-width: 601px) and (max-width: 900px) {
+  body {
+    font-size: 15px;
+  }
+  .currency-pairs-scroll {
+    gap: 10px;
+    padding: 8px 0;
+  }
+  .currency-pair-item {
+    padding: 7px 10px;
+    font-size: 13px;
+    border-radius: 7px;
+  }
+  .currency-select {
+    font-size: 14px;
+    padding: 12px 14px;
+    min-width: 85px;
+  }
+  .amount-input,
+  .result-input {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .currency-row {
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+  }
+}
+
+/* Target portrait orientation on mobiles/tablets */
+@media (max-width: 900px) and (orientation: portrait) {
+  /* For example, stack vertical cards more and increase font size */
+  .exchange-card, .balance-card, .transactions-section {
+    flex-direction: column;
+  }
+}
+
+/* Optional: tweak for landscape orientation on small devices */
+@media (max-width: 900px) and (orientation: landscape) {
+  /* Slightly smaller font and horizontal layouts */
+  body {
+    font-size: 14px;
+  }
+}
