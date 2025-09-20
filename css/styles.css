@@ -53,7 +53,7 @@ body {
     flex-direction: column;
 }
 
-/* --- Login/Onboarding Section Styles --- */
+
 #login-section {
     display: flex;
     flex-direction: column;
@@ -181,7 +181,7 @@ input[type="text"]:focus, input[type="password"]:focus {
     overflow-y: auto; /* Enable scrolling for content */
 }
 
-/* Top Navigation */
+/*============ Top Navigation =========*/
 .top-nav {
     display: flex;
     justify-content: space-between;
@@ -211,7 +211,7 @@ input[type="text"]:focus, input[type="password"]:focus {
     margin-right: auto;
 }
 
-/* Balance Card */
+/*=========== Balance Card =========*/
 .balance-card {
     background: var(--balance-card-color);
     color: var(--white);
@@ -294,7 +294,8 @@ input[type="text"]:focus, input[type="password"]:focus {
     opacity: 0.8;
 }
 
-/* Transactions Section */
+/*=============== Transactions Section =============*/
+
 .transactions-section {
     margin-bottom: 80px; /* Space above the fixed bottom nav */
 }
@@ -417,7 +418,8 @@ input[type="text"]:focus, input[type="password"]:focus {
     color: #c82333;
 }
 
-/* Bottom Navigation */
+/*================== Bottom Navigation ==================*/
+
 .bottom-nav-bar {
     bottom: 0px;
     position: fixed;
@@ -483,6 +485,7 @@ input[type="text"]:focus, input[type="password"]:focus {
 }
 
 /*=================== Currency Exchange Section ==================*/
+
 .currency-exchange {
     margin-bottom: 24px;
     
@@ -565,12 +568,11 @@ input[type="text"]:focus, input[type="password"]:focus {
     background-size: 16px;
     padding-right: 40px;
 }
-.currency-display:active, .currency-display:focus {
-    background: var(--gradient-purple-btn);
+
+.currency-display.selected {
+    background: var(--gradient-purple);
     color: #fff;
-    border-color: var(--gradient-purple-btn);
-    outline: none;
-    transform: scale(1.05);
+    border-color: #966cff;
 }
 
 .currency-display:hover {

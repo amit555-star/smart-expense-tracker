@@ -60,6 +60,14 @@ function init() {
     renderCurrencyPairs();
 }
 
+//Display selected to choose currency
+document.querySelectorAll('.currency-display').forEach(el => {
+    el.addEventListener('click', (e) => {
+        document.querySelectorAll('.currency-display').forEach(el2 => el2.classList.remove('selected'));
+        el.classList.add('selected'); // adds the highlight/selected color
+    });
+});
+
 // Update currency dropdowns
 function updateCurrencyDisplays() {
     if (fromCurrencyDisplay) {
