@@ -412,28 +412,33 @@ function setupKeyboardShortcuts() {
 function setupTouchGestures() {
     let touchStartX = 0;
     let touchStartY = 0;
-    
+    let tapTimeout = null;
+
     document.addEventListener('touchstart', (e) => {
         touchStartX = e.touches[0].clientX;
         touchStartY = e.touches[0].clientY;
     });
-    
+
     document.addEventListener('touchend', (e) => {
         const touchEndX = e.changedTouches[0].clientX;
         const touchEndY = e.changedTouches[0].clientY;
-        
+
         const deltaX = touchEndX - touchStartX;
         const deltaY = touchEndY - touchStartY;
-        
-        // Detect swipe gestures on currency exchange area
-        const exchangeCard = document.querySelector('.exchange-card');
-        const target = e.target.closest('.exchange-card');
-        
-        if (target && Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
-            if (deltaX > 0) {
-                // Swipe right - swap currencies
-                swapCurrencies();
+
+        // Set a small threshold (e.g., 15px) to allow for finger jitter
+        if (Math.abs(deltaX) < 15 && Math.abs(deltaY) < 15) {
+            // This is a tap, not a scroll or swipe
+            const target = e.target.closest('.currency-pairs-scroll');
+            if (target) {
+                selectCurrency(target);
             }
+        } else if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
+            // Swipe gesture (your swap logic)
+            const exchangeCard = document.querySelector('.exchange-card');
+            const target = e.target.closest('.exchange-card');
+            
+            
         }
     });
 }
