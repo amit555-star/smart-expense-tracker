@@ -71,10 +71,10 @@ document.querySelectorAll('.currency-display').forEach(el => {
 // Update currency dropdowns
 function updateCurrencyDisplays() {
     if (fromCurrencyDisplay) {
-        fromCurrencyDisplay.innerHTML = `${currencyFlags[currentFromCurrency]} <span style='font-size:13px;'>${currentFromCurrency}</span>`;
+        fromCurrencyDisplay.innerHTML = `${currencyFlags[currentFromCurrency]} <span style='font-size:18px;'>${currentFromCurrency}</span>`;
     }
     if (toCurrencyDisplay) {
-        toCurrencyDisplay.innerHTML = `${currencyFlags[currentToCurrency]} <span style='font-size:13px;'>${currentToCurrency}</span>`;
+        toCurrencyDisplay.innerHTML = `${currencyFlags[currentToCurrency]} <span style='font-size:18px;'>${currentToCurrency}</span>`;
     }
 }
 
