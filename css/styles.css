@@ -571,10 +571,16 @@ input[type="text"]:focus, input[type="password"]:focus {
     padding-right: 40px;
 }
 
-.currency-display.selected {
+#fromCurrencyDisplay.selected {
     background: var(--gradient-purple);
     color: #fff;
     border-color: #966cff;
+}
+
+#toCurrencyDisplay.selected {
+    background: var(--gradient-orange);
+    color: #fff;
+    border-color: var(--gradient-orange);
 }
 
 .currency-display:hover {
