@@ -11,7 +11,7 @@ const exchangeRates = {
     INR: 83.15,
     NPR: 139.31,
     AED: 3.67,
-    MMK: 2.100,
+    MMK: 2100,
     LKR: 302.95,
     PHP: 58.12,
     UGX: 3.464,
