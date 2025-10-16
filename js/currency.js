@@ -9,7 +9,17 @@ const exchangeRates = {
     CHF: 0.92,
     CNY: 7.12,
     INR: 83.15,
-    NPR: 139.31
+    NPR: 139.31,
+    AED: 3.67,
+    MMK: 2.100,
+    LKR: 302.95,
+    PHP: 58.12,
+    UGX: 3.464,
+    EGP: 47.59,
+    PKR: 281.40,
+    BDT: 121.80,
+    IDR: 16.574
+
 };
 
 // Currency flags mapping
@@ -23,7 +33,16 @@ const currencyFlags = {
     CHF: '🇨🇭',
     CNY: '🇨🇳',
     INR: '🇮🇳',
-    NPR: '🇳🇵'
+    NPR: '🇳🇵',
+    AED: '🇦🇪',
+    MMK: '🇲🇲',
+    LKR: '🇱🇰',
+    PHP: '🇵🇭',
+    UGX: '🇺🇬',
+    EGP: '🇪🇬',
+    PKR: '🇵🇰',
+    BDT: '🇧🇩',
+    IDR: '🇮🇩'
 };
 
 // DOM Elements
