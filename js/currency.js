@@ -1,24 +1,24 @@
 // Currency exchange rates (relative to USD)
 const exchangeRates = {
     USD: 1.0,
-    EUR: 0.85,
+    EUR: 0.86,
     GBP: 0.73,
-    JPY: 110.25,
-    CAD: 1.25,
+    JPY: 150.42,
+    CAD: 1.40,
     AUD: 1.35,
     CHF: 0.92,
     CNY: 7.12,
-    INR: 83.15,
-    NPR: 139.31,
+    INR: 87.95,
+    NPR: 141.24,
     AED: 3.67,
     MMK: 2100,
-    LKR: 302.95,
+    LKR: 303.62,
     PHP: 58.12,
     UGX: 3.464,
     EGP: 47.59,
-    PKR: 281.40,
-    BDT: 121.80,
-    IDR: 16.574
+    PKR: 283.89,
+    BDT: 122.14,
+    IDR: 16556.70
 
 };
 
